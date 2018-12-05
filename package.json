@@ -1,6 +1,6 @@
 {
-  "name": "@beanutils/define",
-  "version": "0.1.1",
+  "name": "@beancommons/define",
+  "version": "0.1.2",
   "description": "Define global variable for webpack DefinePlugin",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
@@ -10,11 +10,11 @@
   "author": "Stephen Liu",
   "repository": {
     "type": "git",
-    "url": "https://github.com/stephenliu1944/beanutils-define.git"
+    "url": "https://github.com/stephenliu1944/beancommons-define.git"
   },
-  "homepage": "https://github.com/stephenliu1944/beanutils-define",
+  "homepage": "https://github.com/stephenliu1944/beancommons-define",
   "bugs": {
-    "url": "https://github.com/stephenliu1944/beanutils-define/issues"
+    "url": "https://github.com/stephenliu1944/beancommons-define/issues"
   },
   "keywords": [
     "define",

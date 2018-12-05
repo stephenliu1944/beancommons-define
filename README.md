@@ -1,8 +1,8 @@
-# @beanutils/define
+# @beancommons/define
 Define global variable for webpack DefinePlugin.
 
 ## Install
-npm install --save @beanutils/define
+npm install --save @beancommons/define
 
 ## Usage
 package.json
@@ -22,7 +22,7 @@ package.json
 ```
 webpack.config.dev.babel.js
 ```js
-import { define } from '@beanutils/define';
+import { define } from '@beancommons/define';
 import pkg from './package.json';
 
 var global = pkg.global;
