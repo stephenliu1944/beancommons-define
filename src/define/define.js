@@ -1,4 +1,4 @@
-export function define(options, prefix = '__', suffix = '__') {
+export function define(options, prefix = '', suffix = '') {
     var global = {};
 
     if (!options) {

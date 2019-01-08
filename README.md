@@ -28,13 +28,13 @@ import pkg from './package.json';
 var global = pkg.global;
 
 new webpack.DefinePlugin({
-    __DEV__: true,
-    'process.env.NODE_ENV': JSON.stringify('development')
-    ...define(global)
+    ...define(global)       // return "WWW": "http://localhost:8080"...
+    // or
+    ...define(global, '__', '__')   // return "__WWW__": "http://localhost:8080"...
 })
 ```
 
 ## API
 ```js
-function define(options, prefix = '__', suffix = '__');
+function define(options, prefix = '', suffix = '');
 ```

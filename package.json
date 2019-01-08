@@ -1,6 +1,6 @@
 {
   "name": "@beancommons/define",
-  "version": "0.1.2",
+  "version": "0.2.1",
   "description": "Define global variable for webpack DefinePlugin",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
