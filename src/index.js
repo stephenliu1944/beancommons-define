@@ -1,1 +1,1 @@
-export * from './define';
+export default from './define';

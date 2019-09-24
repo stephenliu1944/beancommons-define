@@ -29,7 +29,7 @@ export function rollupMerge(source1 = {}, source2 = {}) {
 
 export default function(fileName) {
     return {
-        input: `src/${ isDEV ? 'dev' : 'index' }.js`,
+        input: `${ isDEV ? 'test' : 'src' }/index.js`,
         // external: !isDEV && ['ms'],    // 打包时排除外部依赖包
         plugins: [
             del({
@@ -55,7 +55,6 @@ export default function(fileName) {
             }),
             // 全局变量
             replace({
-                __DEV__: isDEV,
                 'process.env.NODE_ENV': JSON.stringify(NODE_ENV)
             })
         ]
