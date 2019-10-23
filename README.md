@@ -1,8 +1,8 @@
-# @middlend/define
+# @easytool/define
 Define global variable for webpack DefinePlugin.
 
 ## Install
-npm install -D @middlend/define
+npm install -D @easytool/define
 
 ## Usage
 package.json
@@ -24,7 +24,7 @@ package.json
 
 webpack.config.dev.babel.js
 ```js
-import define from '@middlend/define';
+import define from '@easytool/define';
 import pkg from './package.json';
 
 var global = pkg.global;

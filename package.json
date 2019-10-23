@@ -1,5 +1,5 @@
 {
-  "name": "@middlend/define",
+  "name": "@easytool/define",
   "version": "0.1.1",
   "description": "Define global variable for webpack DefinePlugin",
   "main": "dist/index.cjs.js",
