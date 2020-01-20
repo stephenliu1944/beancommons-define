@@ -1,8 +1,8 @@
-# @easytool/define
-Define global variable for webpack DefinePlugin.
+# @easytool/define-config
+Config global variables for webpack DefinePlugin.
 
 ## Install
-npm install -D @easytool/define
+npm install -D @easytool/define-config
 
 ## Usage
 package.json
@@ -15,28 +15,28 @@ package.json
 },
 "global": {
     "__DEV__": true,
-    "WWW": "http://localhost:8080",
-    "SEARCH": "http://localhost:8081",
-    "REPORT": "http://localhost:8082",
-    "MAP": "http://localhost:8083"
+    "__WWW__": "http://localhost:8080",
+    "__SEARCH__": "http://localhost:8081",
+    "__REPORT__": "http://localhost:8082",
+    "__MAP__": "http://localhost:8083"
 }
 ```
 
 webpack.config.dev.babel.js
 ```js
-import define from '@easytool/define';
+import define from '@easytool/define-config';
 import pkg from './package.json';
 
 var global = pkg.global;
 
 new webpack.DefinePlugin({
     ...define(global)
-    // return {"__DEV__": true, "WWW": "http://localhost:8080"...}
+    // return {"__DEV__": true, "__WWW__": "http://localhost:8080"...}
 })
 // or
 new webpack.DefinePlugin({
     ...define(global, false)
-    // return {"__DEV__": false, "WWW": false...}
+    // return {"__DEV__": false, "__WWW__": false...}
 })
 ```
 
