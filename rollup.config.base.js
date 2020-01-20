@@ -52,10 +52,6 @@ export default function(fileName) {
                 throwOnError: true,
                 include: ['src/**/*.js'], // defaults to .svg, .png, .jpg and .gif files
                 configFile: `.eslintrc${ isDEV ? '' : '.prod' }.json`
-            }),
-            // 全局变量
-            replace({
-                'process.env.NODE_ENV': JSON.stringify(NODE_ENV)
             })
         ]
     };

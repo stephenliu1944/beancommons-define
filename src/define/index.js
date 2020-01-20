@@ -11,18 +11,18 @@ function handleValue(value = '') {
 }
 
 export default function define(options = {}, enabled = true) {
-    var global = {};
+    var variables = {};
 
     if (!options) {
-        return global;
+        return variables;
     }
 
     for (let key in options) {
         if (options.hasOwnProperty(key)) {
             let value = options[key];
-            global[key] = enabled ? handleValue(value) : false;
+            variables[key] = enabled ? handleValue(value) : false;
         }
     }
 
-    return global;
+    return variables;
 }
