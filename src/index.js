@@ -1,1 +1,4 @@
-export default from './define';
+import settings from './define';
+
+export { settings };
+export default settings;
